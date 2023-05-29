@@ -37,5 +37,16 @@ namespace SortingAlgoritmsTests
                 item => Assert.Equal(8,item),
                 item => Assert.Equal(4,item));
         }
+        [Fact]
+        public void QuickSort_Test()
+        {
+            var arr = new double[] {45.3,23.5,12.4,69.2};
+            SortingAlgoritms.QuickSort.Sort<double>(arr);
+            Assert.Collection(arr,
+                item => Assert.Equal(12.4, item),
+                item => Assert.Equal(23.5, item),
+                item => Assert.Equal(45.3, item),
+                item => Assert.Equal(69.2, item));
+        }
     }
 }

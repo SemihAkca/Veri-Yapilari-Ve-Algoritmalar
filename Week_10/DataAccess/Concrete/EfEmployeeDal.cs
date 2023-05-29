@@ -18,9 +18,8 @@ namespace DataAccess.Concrete
                 return filter == null ? context.Set<Employee>().ToList()
                     : context.Set<Employee>().Where(filter).ToList();
             }
-
+            
             #region ADO NET İle Sqlite Üzerinden Veri Getirme 
-            //ADO Net ile sqlite üzerinden veri getirme
             //var employees = new List<Employee>();
             //string connectionString = "Data Source = C:\\Users\\win10\\Desktop\\MYAZ206\\Veri_Yapıları_Ve_Algoritmalar\\Week_10\\SortingAlgoritmsApp\\Employee.db;";
             //using (SQLiteConnection connection = new SQLiteConnection(connectionString))
@@ -43,6 +42,7 @@ namespace DataAccess.Concrete
             //            }
             //        }
             //    }
+            //    connection.Close();
             //}
 
             //return filter == null

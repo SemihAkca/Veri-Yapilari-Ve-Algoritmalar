@@ -133,7 +133,7 @@ namespace Array
 
         public IEnumerator<T> GetEnumerator()
         {
-            return new ArrayEnumerator<T>(InnerArray,_Index);
+            return new ArrayEnumerator<T>(InnerArray);
         }
 
         IEnumerator IEnumerable.GetEnumerator()

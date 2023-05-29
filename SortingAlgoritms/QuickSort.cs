@@ -30,7 +30,8 @@
                 while (array[j].CompareTo(pivot) > 0) { j--; }
                 if (i >= j) break;
                 Sorting.Swap<T>(array, i, j);
-            } while (i <= j);
+            }
+            while(i <= j);
 
             return j;
         }

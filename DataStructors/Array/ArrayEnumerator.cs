@@ -6,16 +6,14 @@ public class ArrayEnumerator<T> : IEnumerator<T>
 {
     private T[] _array;
     private int _index = -1;
-    private int _position;
-    public ArrayEnumerator(T[] array,int position)
+    public ArrayEnumerator(T[] array)
     {
         _array = array;
-        _position = position;
     }
 
     public bool MoveNext()
     {
-        if (_index < _position-1)
+        if (_index < _array.Length-1)
         {
             _index++;
             return true;
