@@ -22,7 +22,7 @@ namespace BinarySearchTreeTests
         public void PreOrder_TraversalTest() 
         {
             var list = new List<int>();
-            _binarySearchTree.PreOrder(_binarySearchTree.Root, list); // 45 35 24 40 59 50 60 
+            _binarySearchTree.PreOrder(_binarySearchTree.Root, list); // 45 35 24 40 59 50 68 
 
             Assert.Collection(list,
                 item => Assert.Equal(45,item),

@@ -1,5 +1,6 @@
 ﻿using Business.Conrete;
 using DataAccess.Concrete;
+using Entities;
 using SortingAlgoritms;
 
 
@@ -76,3 +77,4 @@ else
     Console.WriteLine("Geçersiz seçim!");
     Console.ReadLine();
 }
+

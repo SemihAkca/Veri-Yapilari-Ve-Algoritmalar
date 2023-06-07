@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DataStructors\Trees\Trees.csproj" />
+    <ProjectReference Include="..\..\DataStructors\Trees\Trees.csproj" />
   </ItemGroup>
 
 </Project>
